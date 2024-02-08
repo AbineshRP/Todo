@@ -21,7 +21,7 @@ const forgotPassword = async (req, res) => {
     await user.save();
     
     //Send email with reset token
-    const resetUrl = `http://localhost:3000/resetPassword?token=${resetToken}`;
+    const resetUrl = `https://65c4bacd5495fc09174563aa--aesthetic-parfait-2010e4.netlify.app/resetPassword?token=${resetToken}`;
     var transporter = createTransport({
         service: 'gmail',
         host: 'smtp.gmail.com',
